@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tharun Vaithya Devaraj | Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .hero-gradient {
+            background: linear-gradient(135deg, #f5f7fa 0%, #e4e8eb 100%);
+        }
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        .skill-bar {
+            height: 5px;
+            border-radius: 3px;
+        }
+        .timeline-item:before {
+            content: '';
+            position: absolute;
+            left: -16px;
+            top: 0;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: #3b82f6;
+        }
+        .nav-link:hover:after {
+            width: 100%;
+            left: 0;
+        }
+        .nav-link:after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -2px;
+            left: 50%;
+            background: #3b82f6;
+            transition: all 0.3s ease;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white shadow-sm z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <span class="text-xl font-bold text-blue-600">THARUN VAITHYA DEVARAJ</span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="nav-link relative text-blue-600 font-medium">Home</a>
+                    <a href="#about" class="nav-link relative text-gray-600 hover:text-blue-600 font-medium">About</a>
+                    <a href="#projects" class="nav-link relative text-gray-600 hover:text-blue-600 font-medium">Projects</a>
+                    <a href="#skills" class="nav-link relative text-gray-600 hover:text-blue-600 font-medium">Skills</a>
+                    <a href="#experience" class="nav-link relative text-gray-600 hover:text-blue-600 font-medium">Experience</a>
+                    <a href="#contact" class="nav-link relative text-gray-600 hover:text-blue-600 font-medium">Contact</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-button" class="text-gray-600 hover:text-blue-600">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white pb-4 px-4 shadow-lg">
+            <div class="flex flex-col space-y-2">
+                <a href="#home" class="block px-3 py-2 font-medium text-blue-600">Home</a>
+                <a href="#about" class="block px-3 py-2 font-medium text-gray-600 hover:text-blue-600">About</a>
+                <a href="#projects" class="block px-3 py-2 font-medium text-gray-600 hover:text-blue-600">Projects</a>
+                <a href="#skills" class="block px-3 py-2 font-medium text-gray-600 hover:text-blue-600">Skills</a>
+                <a href="#experience" class="block px-3 py-2 font-medium text-gray-600 hover:text-blue-600">Experience</a>
+                <a href="#contact" class="block px-3 py-2 font-medium text-gray-600 hover:text-blue-600">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-gradient pt-32 pb-20 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">Tharun Vaithya Devaraj</h1>
+                    <h2 class="text-2xl md:text-3xl text-blue-600 font-semibold mb-6">Mechanical Engineering Graduate Student</h2>
+                    <p class="text-gray-600 mb-8 text-lg max-w-lg">I'm a Master's student in Mechanical Engineering with a passion for manufacturing, design, and optimization. With hands-on experience in CAD modeling, simulation, and process improvement, I bridge theory and application to deliver practical engineering solutions. My work focuses on efficiency, innovation, and impact—driven by curiosity and a commitment to continuous learning.</p>
+                    <div class="flex flex-wrap gap-4">
+    <a href="#projects" class="border-2 border-blue-600 text-blue-600 hover:bg-blue-50 px-6 py-3 rounded-lg font-medium transition duration-300">View My Work</a>
+    <a href="#contact" class="border-2 border-blue-600 text-blue-600 hover:bg-blue-50 px-6 py-3 rounded-lg font-medium transition duration-300">Contact Me</a>
+    <a href="Tharun_Resume.pdf" download class="border-2 border-blue-600 text-blue-600 hover:bg-blue-50 px-6 py-3 rounded-lg font-medium transition duration-300"">Download Resume</a>
+</div>
+                </div>
+                <div class="md:w-1/2 flex justify-center">
+                    <div class="relative">
+                        <div class="w-64 h-64 md:w-80 md:h-80 bg-blue-100 rounded-full overflow-hidden border-8 border-white shadow-xl">
+                            <img src="WHITE BACKGROUND.jpg" alt="Tharun's photo">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-4">About Me</h2>
+            <div class="w-20 h-1 bg-blue-600 mx-auto mb-12"></div>
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <img src="BG.jpg" alt="Modern Engineering" class="rounded-lg shadow-lg w-full">
+                </div>
+                <div class="md:w-1/2 md:pl-12">
+                    <h3 class="text-2xl font-semibold mb-4">Innovative Problem Solver & Mechanical Designer</h3>
+                    <p class="text-gray-600 mb-4">I’m currently pursuing a Master’s degree in Mechanical Engineering, with a focus on applying core engineering principles to real-world problems in design, manufacturing, and simulation. Over the past year, I’ve worked on diverse academic and personal projects that strengthened my skills in CAD, FEA, and process optimization.
+
+Beyond technical work, I value collaboration, continuous learning, and delivering solutions that are both efficient and practical. I’m always eager to explore new technologies and engineering domains, aiming to contribute meaningfully to innovative and forward-thinking teams.</p>
+                    <p class="text-gray-600 mb-6">With a strong background in both theoretical and applied mechanics, I bridge the gap between inventive concepts and practical, manufacturable solutions.</p>
+                    <div class="flex flex-wrap gap-4">
+                        <div class="flex items-center">
+                            <div class="bg-blue-100 p-2 rounded-full mr-3">
+                                <i class="fas fa-cogs text-blue-600"></i>
+                            </div>
+                            <span class="font-medium">Mechanical Design</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="bg-blue-100 p-2 rounded-full mr-3">
+                                <i class="fas fa-fire text-blue-600"></i>
+                            </div>
+                            <span class="font-medium">Operations Management and Analytics</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="bg-blue-100 p-2 rounded-full mr-3">
+                                <i class="fas fa-project-diagram text-blue-600"></i>
+                            </div>
+                            <span class="font-medium">FEA/CFD</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="bg-blue-100 p-2 rounded-full mr-3">
+                                <i class="fas fa-industry text-blue-600"></i>
+                            </div>
+                            <span class="font-medium">Manufacturing</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-4">Featured Projects</h2>
+            <div class="w-20 h-1 bg-blue-600 mx-auto mb-12"></div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="project-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <img src="wafer transfer arm.png" alt="Wafer Transfer Arm" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-3">
+                            <h3 class="text-xl font-bold">Wafer Transfer Arm - 
+                                Design & Analysis</h3>
+                            <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded">2025</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">Designed a precision wafer transfer mechanism using analytical calculations for semiconductor applications.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-gray-100 text-gray-800 text-xs px-3 py-1 rounded-full">Precision Engineering</span>
+                            <span class="bg-gray-100 text-gray-800 text-xs px-3 py-1 rounded-full">Engineering mechanics</span>
+                            <span class="bg-gray-100 text-gray-800 text-xs px-3 py-1 rounded-full">System Design</span>
+                        </div>
+                        <a href="javascript:void(0);" 
+   onclick="
+     const content = document.getElementById('details-content-1');
+     const text = document.getElementById('toggle-text-1');
+     content.classList.toggle('hidden');
+     text.textContent = content.classList.contains('hidden') ? 'View Details' : 'Hide Details';
+   "
+   class="text-blue-600 hover:text-blue-800 font-medium inline-flex items-center">
+  <span id="toggle-text-1">View Details</span>
+  <i class="fas fa-chevron-right ml-2 text-sm"></i>
+</a>
+<div id="details-content-1" class="mt-2 hidden max-h-40 overflow-y-auto">
+  <!-- Your long content here -->
+  <p class="text-gray-700">
+    Designed a semiconductor-grade wafer transfer arm using analytical calculations focused on high precision and repeatability.
+
+    <br><br>Executed force, torque, and stress analysis to validate mechanical integrity under load conditions.
+    <br><br>Focused on minimizing deformation and vibration for optimal performance.
+    <br><br>Worked with methodology adaptable to similar motion-critical automation systems.
+  </p>
+</div>
+
+           
+
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="project-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <img src="walker aid.png" alt="Mobility Walker Aid" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-3">
+                            <h3 class="text-xl font-bold">Mobility Walker Aid</h3>
+                            <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded">2025</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">Developed a 4-wheeled mobility assistive Aid model for elderly users focusing on stability, ergonomics and safety.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-gray-100 text-gray-800 text-xs px-3 py-1 rounded-full">CAD</span>
+                            <span class="bg-gray-100 text-gray-800 text-xs px-3 py-1 rounded-full">FEA</span>
+                            <span class="bg-gray-100 text-gray-800 text-xs px-3 py-1 rounded-full">Product Design and Developement</span>
+                            <span class="bg-gray-100 text-gray-800 text-xs px-3 py-1 rounded-full">R & D</span>
+                        </div>
+                         <a href="javascript:void(0);" 
+   onclick="
+     const content = document.getElementById('details-content-2');
+     const text = document.getElementById('toggle-text-2');
+     content.classList.toggle('hidden');
+     text.textContent = content.classList.contains('hidden') ? 'View Details' : 'Hide Details';
+   "
+   class="text-blue-600 hover:text-blue-800 font-medium inline-flex items-center">
+  <span id="toggle-text-2">View Details</span>
+  <i class="fas fa-chevron-right ml-2 text-sm"></i>
+</a>
+<div id="details-content-2" class="mt-2 hidden max-h-40 overflow-y-auto">
+  <!-- Your long content here -->
+  <p class="text-gray-700">
+    Created a 3D CAD model of a four-wheeled walker tailored to accommodate elderly and disabled users with mobility limitations.
+    <br><br>Applied ergonomic design principles to optimize handle height, user posture, and ease of movement.
+    <br><br>Conducted Finite Element Analysis (FEA) to assess structural stability under various loading conditions.
+    <br><br>Iterated designs based on stress and deformation results to enhance reliability and comfort.
+    <br><br>Developed technical documentation and design reports for academic and review purposes.
+  </p>
+</div>
+   </div>
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="project-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <img src="heat exchanger cfd simulation.jpg" alt="Industrial Robot" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-3">
+                            <h3 class="text-xl font-bold">Heat Exchanger-CFD simulation</h3>
+                            <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded">2024</span>
+                        </div>
+                        <p class="text-gray-600 mb-4"> Simulated thermal and fluid flow behavior in a shell-and-tube heat exchanger using ANSYS Fluent.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-gray-100 text-gray-800 text-xs px-3 py-1 rounded-full">CFD</span>
+                            <span class="bg-gray-100 text-gray-800 text-xs px-3 py-1 rounded-full">ANSYS fluent</span>
+                            <span class="bg-gray-100 text-gray-800 text-xs px-3 py-1 rounded-full">Thermal Engineering</span>
+                        </div>
+                 <a href="javascript:void(0);" 
+   onclick="
+     const content = document.getElementById('details-content-3');
+     const text = document.getElementById('toggle-text-3');
+     content.classList.toggle('hidden');
+     text.textContent = content.classList.contains('hidden') ? 'View Details' : 'Hide Details';
+   "
+   class="text-blue-600 hover:text-blue-800 font-medium inline-flex items-center">
+  <span id="toggle-text-3">View Details</span>
+  <i class="fas fa-chevron-right ml-2 text-sm"></i>
+</a>
+<div id="details-content-3" class="mt-2 hidden max-h-40 overflow-y-auto">
+  <!-- Your long content here -->
+  <p class="text-gray-700">
+    Modeled fluid flow and heat transfer in a shell-and-tube heat exchanger to study thermal behavior.
+    <br><br>Used CFD simulations to analyze velocity profiles, temperature gradients, and pressure losses.
+    <br><br>Identified bottlenecks and optimized baffle configuration to improve heat transfer efficiency.
+    <br><br>Interpreted simulation data to recommend practical design improvements for industrial application.
+  </p>
+</div>
+   </div>
+                </div>
+                <!-- Project 4 -->
+                <div class="project-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <img src="doe spc.png" alt="DoE & SPC" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-3">
+                            <h3 class="text-xl font-bold">Design of Experiments & Statistical Process Control</h3>
+                            <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded">2024</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">Simulated reflow soldering behavior using a low-cost model to study process variability and control strategies</p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-gray-100 text-gray-800 text-xs px-3 py-1 rounded-full">MiniTab</span>
+                            <span class="bg-gray-100 text-gray-800 text-xs px-3 py-1 rounded-full">ANOVA</span>
+                            <span class="bg-gray-100 text-gray-800 text-xs px-3 py-1 rounded-full">DoE</span>
+                            <span class="bg-gray-100 text-gray-800 text-xs px-3 py-1 rounded-full">Regression modeling</span>
+                            <span class="bg-gray-100 text-gray-800 text-xs px-3 py-1 rounded-full">SPC charts</span>
+
+                        </div>
+                     <a href="javascript:void(0);" 
+   onclick="
+     const content = document.getElementById('details-content-4');
+     const text = document.getElementById('toggle-text-4');
+     content.classList.toggle('hidden');
+     text.textContent = content.classList.contains('hidden') ? 'View Details' : 'Hide Details';
+   "
+   class="text-blue-600 hover:text-blue-800 font-medium inline-flex items-center">
+  <span id="toggle-text-4">View Details</span>
+  <i class="fas fa-chevron-right ml-2 text-sm"></i>
+</a>
+<div id="details-content-4" class="mt-2 hidden max-h-40 overflow-y-auto">
+  <!-- Your long content here -->
+  <p class="text-gray-700">
+    Designed and conducted a full-factorial 2³ DOE experiment to analyze the effects of temperature, cocoa percentage, and pan thermal conductivity on melting behavior (analogous to solder reflow).
+    <br><br>Used chocolate chips as a cost-effective analog for solder, enabling simulation of reflow soldering in electronics manufacturing.
+    <br><br>Documented methodology and findings in a professional group presentation and technical report format.
+    <br><br>Built regression models to capture main effects and interactions between process variables, validating with residual plots and ANOVA
+    <br><br>Translated academic experiments into real-world analogs, highlighting relevance to quality control in electronics manufacturing.
+  </p>
+</div>
+ </div> 
+ </div>                         
+                
+                <!-- Project 5 -->
+                <div class="project-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <img src="DMA.png" alt="Composite analysis" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-3">
+                            <h3 class="text-xl font-bold">Dynamic Mechanical Analysis (DMA)-Composite Material Study
+                                
+                            </h3>
+                            <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded">2023</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">Performed DMA testing on jute/pineapple fiber composites to assess viscoelastic performance.</p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-gray-100 text-gray-800 text-xs px-3 py-1 rounded-full">DMA Tester</span>
+                            <span class="bg-gray-100 text-gray-800 text-xs px-3 py-1 rounded-full">Composites</span>
+                            <span class="bg-gray-100 text-gray-800 text-xs px-3 py-1 rounded-full">Material analysis</span>
+                        </div>
+                        <a href="javascript:void(0);" 
+   onclick="
+     const content = document.getElementById('details-content-5');
+     const text = document.getElementById('toggle-text-5');
+     content.classList.toggle('hidden');
+     text.textContent = content.classList.contains('hidden') ? 'View Details' : 'Hide Details';
+   "
+   class="text-blue-600 hover:text-blue-800 font-medium inline-flex items-center">
+  <span id="toggle-text-5">View Details</span>
+  <i class="fas fa-chevron-right ml-2 text-sm"></i>
+</a>
+<div id="details-content-5" class="mt-2 hidden max-h-40 overflow-y-auto">
+  <!-- Your long content here -->
+  <p class="text-gray-700">
+    Investigated the mechanical behavior of jute and pineapple fiber polymer composites under dynamic loads.
+    <br><br>Measured storage and loss modulus to understand stiffness and damping characteristics.
+    <br><br>Evaluated performance for automotive/structural applications using DMA data curves.
+  </p>
+</div>
+ </div>
+ </div>
+                
+                <!-- Project 6 -->
+                <div class="project-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <img src="fire sup.png" alt="Fire suppressor" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-3">
+                            <h3 class="text-xl font-bold">In-Built Car Fire Suppressor-Conceptual Design</h3>
+                            <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded">National Level Symposium - Runner up - 2022</span>
+                            
+                        </div>
+                        <p class="text-gray-600 mb-4">Designed an integrated fire suppression system suitable for automotive applications</p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-gray-100 text-gray-800 text-xs px-3 py-1 rounded-full">CAD schematics</span>
+                            <span class="bg-gray-100 text-gray-800 text-xs px-3 py-1 rounded-full">Embedded Electronics Concept</span>
+                            <span class="bg-gray-100 text-gray-800 text-xs px-3 py-1 rounded-full">System Flow and safety compliance</span>
+                        </div>
+                         <a href="javascript:void(0);" 
+   onclick="
+     const content = document.getElementById('details-content-6');
+     const text = document.getElementById('toggle-text-6');
+     content.classList.toggle('hidden');
+     text.textContent = content.classList.contains('hidden') ? 'View Details' : 'Hide Details';
+   "
+   class="text-blue-600 hover:text-blue-800 font-medium inline-flex items-center">
+  <span id="toggle-text-6">View Details</span>
+  <i class="fas fa-chevron-right ml-2 text-sm"></i>
+</a>
+<div id="details-content-6" class="mt-2 hidden max-h-40 overflow-y-auto">
+  <!-- Your long content here -->
+  <p class="text-gray-700">
+    Engineered a compact fire suppression unit designed for installation within vehicle chassis, integrating seamlessly with existing car architecture
+    <br><br>Defined sensor integration logic using dual heat and smoke detection to trigger deployable suppressants within seconds of a fire event.
+    <br><br>Designed CAD schematics for extinguisher housing, nozzle placements, and sensor modules tailored to typical engine bay dimensions.
+    <br><br>Demonstrated potential for commercial adaptation and retrofit in passenger and specialty vehicles.
+  </p>
+</div>
+</div>
+</div>
+
+
+
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-4">Technical Skills</h2>
+            <div class="w-20 h-1 bg-blue-600 mx-auto mb-12"></div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- CAD & Modeling -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-blue-100 p-3 rounded-full mr-4">
+                            <i class="fas fa-cube text-blue-600 text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold">CAD & CAE</h3>
+                    </div>
+                    <ul class="space-y-3">
+                        <li>
+                            <div class="flex justify-between mb-1">
+                                <span class="font-medium">SolidWorks</span>
+                        </li>
+                        <li>
+                            <div class="flex justify-between mb-1">
+                                <span class="font-medium">AutoCAD</span>
+                           
+                        </li>
+                        <li>
+                            <div class="flex justify-between mb-1">
+                                <span class="font-medium">CATIA</span>
+                              
+                        </li>
+                        <li>
+                            <div class="flex justify-between mb-1">
+                                <span class="font-medium">Creo</span>
+                            
+                        </li>
+                         <li>
+                            <div class="flex justify-between mb-1">
+                                <span class="font-medium">aPriori </span>
+                            
+                        </li>
+                         <li>
+                            <div class="flex justify-between mb-1">
+                                <span class="font-medium">QDA </span>
+                            
+                        </li>
+                         
+                    
+                    </ul>
+                </div>
+                
+                <!-- Analysis & Simulation -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-blue-100 p-3 rounded-full mr-4">
+                            <i class="fas fa-industry text-blue-600"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold"> Manufacturing & Process Tools</h3>
+                    </div>
+                    <ul class="space-y-3">
+                        <li>
+                            <div class="flex justify-between mb-1">
+                                <span class="font-medium">SAP</span>
+                                
+                            </div>
+                          
+                        </li>
+                        <li>
+                            <div class="flex justify-between mb-1">
+                                <span class="font-medium">Apriso (MES/MOM) </span>
+                                
+                            </div>
+                           
+                        </li>
+                        <li>
+                            <div class="flex justify-between mb-1">
+                                <span class="font-medium">Statistical Process Control (SPC)</span>
+                                
+                            
+                        </li>
+                        <li>
+                            <div class="flex justify-between mb-1">
+                                <span class="font-medium">Design of Experiments (DOE)</span>
+                                
+                            </div>
+                            
+                        </li>
+                         <li>
+                            <div class="flex justify-between mb-1">
+                                <span class="font-medium">GD&T Interpretation</span>
+                                
+                            </div>
+                            
+                        </li>
+                         <li>
+                            <div class="flex justify-between mb-1">
+                                <span class="font-medium">Bill of Materials (BOM) Management </span>
+                                
+                            </div>
+                            
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Programming & Other -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-blue-100 p-3 rounded-full mr-4">
+                            <i class="fas fa-code text-blue-600 text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold">Programming & Analytical</h3>
+                    </div>
+                    <ul class="space-y-3">
+                        <li>
+                            <div class="flex justify-between mb-1">
+                                <span class="font-medium">MATLAB</span>
+                             
+                        </li>
+                        <li>
+                            <div class="flex justify-between mb-1">
+                                <span class="font-medium">Julia</span>
+                              
+                        </li>
+                        <li>
+                            <div class="flex justify-between mb-1">
+                                <span class="font-medium">Python</span>
+                              
+                        </li>
+                        <li>
+                            <div class="flex justify-between mb-1">
+                                <span class="font-medium">MiniTab</span>
+                             
+                        </li>
+                        <li>
+                            <div class="flex justify-between mb-1">
+                                <span class="font-medium">C++</span>
+                           
+                        </li>
+                        <li>
+                            <div class="flex justify-between mb-1">
+                                <span class="font-medium">SQL</span>
+                           
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-4">Professional Experience</h2>
+            <div class="w-20 h-1 bg-blue-600 mx-auto mb-12"></div>
+            
+            <div class="relative pl-8 space-y-8">
+                <!-- Experience 1 -->
+              <div class="timeline-item relative pl-8">
+  <div class="bg-white p-6 rounded-lg shadow-md">
+    <div class="flex flex-col md:flex-row md:justify-between md:items-center mb-4">
+      <h3 class="text-xl font-bold">Trainee - MES/MOM Supporter</h3>
+      <span class="text-blue-600 font-medium">Jul 2023 - Jul 2024</span>
+    </div>
+    
+    <a href="https://www.vestas.com" target="_blank" class="flex items-center mb-4 hover:opacity-80 transition duration-300">
+      <img src="vestas logo.png" alt="Vestas Logo" class="w-10 h-10 object-contain mr-3">
+      <h4 class="text-lg font-semibold text-gray-700">Vestas Wind Systems</h4>
+    </a>
+    
+    <ul class="list-disc pl-5 text-gray-600 space-y-2">
+      <li>Provided day-to-day support for MES operations across 22 manufacturing sites around globe, helping optimize workflows and improve production efficiency by 25% through issue resolution and system stability efforts</li>
+      <li>Actively troubleshot system errors and reported issues, contributing to reduction in downtime by ensuring timely resolution and close coordination with engineering and IT teams.</li>
+      <li>Assisted in documentation, and rollout of MES upgrades, helping ensure on-time delivery of critical system enhancements.</li>
+      <li>Created internal guides and supported user training efforts, leading to boost in user-adoption</li>
+      <li><b>Tools:</b> Apriso, infor EAM, QDA, SAP, ServiceNow, MS Office</li>
+    </ul>
+  </div>
+</div>
+
+
+                <!-- Experience 2 -->
+               <div class="timeline-item relative pl-8">
+  <div class="bg-white p-6 rounded-lg shadow-md">
+    <div class="flex flex-col md:flex-row md:justify-between md:items-center mb-4">
+      <h3 class="text-xl font-bold">Intern</h3>
+      <span class="text-blue-600 font-medium">Feb 2022 - Mar 2022</span>
+    </div>
+
+    <a href="https://www.flowwellcastings.in/" target="_blank" class="flex items-center mb-4 hover:opacity-80 transition duration-300">
+      <img src="flowwell logo.jpg" alt="Flowwell Logo" class="w-10 h-10 object-contain mr-3">
+      <h4 class="text-lg font-semibold text-gray-700">Flowwell Castings</h4>
+    </a>
+
+    <ul class="list-disc pl-5 text-gray-600 space-y-2">
+      <li>Supported the engineering team in technical analysis and modeling, contributing to data-driven decisions that improved project outcomes.</li>
+      <li>Assisted in updating technical drawings and documentation, ensuring compliance with engineering standards and design accuracy.</li>
+      <li>Performed dimensional inspection of prototypes using Coordinate Measuring Machines (CMM), enabling precise evaluation and quality assurance.</li>
+      <li>Collaborated with senior engineers on testing procedures, gaining exposure to real-world casting processes and manufacturing quality control.</li>
+      <li><b>Tools:</b> AutoCAD, SolidWorks, MS Excel, CMM</li>
+    </ul>
+  </div>
+</div>
+
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="py-16 px-4 sm:px-6 lg:px-8 bg-white">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-4">Education</h2>
+            <div class="w-20 h-1 bg-blue-600 mx-auto mb-12"></div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Degree 1 -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-sm flex items-start">
+    <a href="https://www.sjsu.edu" target="_blank" class="bg-white p-2 rounded-full mr-4 mt-1 flex-shrink-0 border border-gray-300 hover:opacity-80 transition duration-300">
+        <img src="sjsu logo.png" alt="SJSU Logo" class="w-10 h-10 object-contain">
+    </a>
+    <div>
+        <h3 class="text-xl font-bold mb-1">M.S. in Mechanical Engineering</h3>
+        <a href="https://www.sjsu.edu" target="_blank" class="text-gray-700 font-semibold hover:underline">San Jose State University</a>
+        <p class="text-gray-600 mb-2">2024 - 2026</p>
+    </div>
+</div>
+
+                
+                <!-- Degree 2 -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-sm flex items-start">
+    <a href="https://stjosephstechnology.ac.in" target="_blank" class="bg-white p-2 rounded-full mr-4 mt-1 flex-shrink-0 border border-gray-300 hover:opacity-80 transition duration-300">
+        <img src="sjit logo.png" alt="St Joseph Logo" class="w-10 h-10 object-contain">
+    </a>
+    <div>
+        <h3 class="text-xl font-bold mb-1">B.E. in Mechanical Engineering</h3>
+        <a href="https://stjosephstechnology.ac.in" target="_blank" class="text-gray-700 font-semibold hover:underline">St Joseph's Institute of Technology</a>
+        <p class="text-gray-600 mb-2">2019 - 2023</p>
+    </div>
+</div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-4">Get In Touch</h2>
+            <div class="w-20 h-1 bg-blue-600 mx-auto mb-12"></div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div>
+                    <h3 class="text-xl font-semibold mb-6">Contact Information</h3>
+                    <div class="space-y-5">
+                        <div class="flex items-start">
+                            <div class="bg-blue-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-envelope text-blue-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium text-gray-800">Email</h4>
+                                <p class="text-gray-600">tharun2274@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-blue-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-phone-alt text-blue-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium text-gray-800">Phone</h4>
+                                <p class="text-gray-600">+1 (669) 325-0644</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-blue-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-map-marker-alt text-blue-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium text-gray-800">Location</h4>
+                                <p class="text-gray-600">San Fransisco Bay area, California</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                  <div class="mt-10">
+    <h3 class="text-xl font-semibold mb-5">Connect With Me</h3>
+    <div class="flex space-x-4">
+        <a href="https://www.linkedin.com/in/tharun-vaithya-devaraj" aria-label="LinkedIn" target="_blank" class="bg-blue-600 text-white p-3 rounded-full hover:bg-blue-700 transition duration-300">
+            <i class="fab fa-linkedin-in"></i>
+        </a>
+        
+        <a href="mailto:tharun.vaithya@gmail.com" aria-label="Email" class="bg-green-600 text-white p-3 rounded-full hover:bg-green-700 transition duration-300">
+            <i class="fas fa-envelope"></i>
+        </a>
+        
+    </div>
+
+
+                    </div>
+                </div>
+                
+                <div class="bg-white p-8 rounded-lg shadow-md">
+    <h3 class="text-xl font-semibold mb-6">Send Me a Message</h3>
+    <form action="https://formspree.io/f/mnnvdkqk" method="POST">
+        <div class="grid grid-cols-1 gap-6">
+            <div>
+                <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Your Name</label>
+                <input type="text" id="name" name="name" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500">
+            </div>
+            <div>
+                <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email Address</label>
+                <input type="email" id="email" name="email" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500">
+            </div>
+            <div>
+                <label for="subject" class="block text-sm font-medium text-gray-700 mb-1">Subject</label>
+                <input type="text" id="subject" name="subject" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500">
+            </div>
+            <div>
+                <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Message</label>
+                <textarea id="message" name="message" rows="4" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500"></textarea>
+            </div>
+
+            <!-- Anti-spam hidden field (optional) -->
+            <input type="text" name="_gotcha" style="display:none">
+
+            <div>
+                <button type="submit" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-medium transition duration-300 w-full">Send Message</button>
+            </div>
+            
+
+
+        </div>
+    </form>
+</div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <h2 class="text-2xl font-bold">THARUN VAITHYA DEVARAJ</h2>
+                    <p class="text-gray-400 mt-2">Mechanical Engineering Graduate student</p>
+                </div>
+                <div class="flex flex-col items-center md:items-end">
+                    <div class="flex space-x-6 mb-4">
+                        <a href="#home" class="text-gray-300 hover:text-white">Home</a>
+                        <a href="#about" class="text-gray-300 hover:text-white">About</a>
+                        <a href="#projects" class="text-gray-300 hover:text-white">Projects</a>
+                        <a href="#experience" class="text-gray-300 hover:text-white">Experience</a>
+                        <a href="#contact" class="text-gray-300 hover:text-white">Contact</a>
+                    </div>
+                    <p class="text-gray-400 text-sm">© 2025 Tharun Vaithya Devaraj. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+                
+                // Close mobile menu if open
+                const mobileMenu = document.getElementById('mobile-menu');
+                if (!mobileMenu.classList.contains('hidden')) {
+                    mobileMenu.classList.add('hidden');
+                }
+            });
+        });
+
+        // Change nav color on scroll
+        window.addEventListener('scroll', function() {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('shadow-md');
+            } else {
+                nav.classList.remove('shadow-md');
+            }
+        });
+        document.querySelectorAll('.view-details').forEach(button => {
+            button.addEventListener('click', () => {
+                const targetId = button.getAttribute('data-target');
+                const details = document.getElementById(targetId);
+                const isVisible = details.classList.contains('show');
+                // Hide all details sections
+                document.querySelectorAll('.project-details').forEach(detail => {
+                    detail.classList.remove('show');
+                });
+                // Toggle the clicked details section
+                if (!isVisible) {
+                    details.classList.add('show');
+                }
+            });
+        });
+    </script>
+    
+</body>
+</html>
