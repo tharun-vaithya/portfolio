@@ -161,251 +161,255 @@ Beyond technical work, I value collaboration, continuous learning, and deliverin
             </div>
         </div>
     </section>
+<!-- Projects Section -->
+<section id="projects" class="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
+    <div class="max-w-7xl mx-auto">
+        <h2 class="text-3xl font-bold text-center mb-4">Featured Projects</h2>
+        <div class="w-20 h-1 bg-blue-600 mx-auto mb-12"></div>
 
-    <!-- Projects Section -->
-    <section id="projects" class="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
-        <div class="max-w-7xl mx-auto">
-            <h2 class="text-3xl font-bold text-center mb-4">Featured Projects</h2>
-            <div class="w-20 h-1 bg-blue-600 mx-auto mb-12"></div>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Project 1 -->
-                <div class="project-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
-                    <img src="wafer transfer arm.png" alt="Wafer Transfer Arm" class="w-full h-48 object-cover">
-                    <div class="p-6">
-                        <div class="flex justify-between items-center mb-3">
-                            <h3 class="text-xl font-bold">Wafer Transfer Arm - 
-                                Design & Analysis</h3>
-                            <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded">2025</span>
-                        </div>
-                        <p class="text-gray-600 mb-4">Designed a precision wafer transfer mechanism using analytical calculations for semiconductor applications.</p>
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="bg-gray-100 text-gray-800 text-xs px-3 py-1 rounded-full">Precision Engineering</span>
-                            <span class="bg-gray-100 text-gray-800 text-xs px-3 py-1 rounded-full">Engineering mechanics</span>
-                            <span class="bg-gray-100 text-gray-800 text-xs px-3 py-1 rounded-full">System Design</span>
-                        </div>
-                        <a href="javascript:void(0);" 
-   onclick="
-     const content = document.getElementById('details-content-1');
-     const text = document.getElementById('toggle-text-1');
-     content.classList.toggle('hidden');
-     text.textContent = content.classList.contains('hidden') ? 'View Details' : 'Hide Details';
-   "
-   class="text-blue-600 hover:text-blue-800 font-medium inline-flex items-center">
-  <span id="toggle-text-1">View Details</span>
-  <i class="fas fa-chevron-right ml-2 text-sm"></i>
-</a>
-<div id="details-content-1" class="mt-2 hidden max-h-40 overflow-y-auto">
-  <!-- Your long content here -->
-  <p class="text-gray-700">
-    Designed a semiconductor-grade wafer transfer arm using analytical calculations focused on high precision and repeatability.
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-    <br><br>Executed force, torque, and stress analysis to validate mechanical integrity under load conditions.
-    <br><br>Focused on minimizing deformation and vibration for optimal performance.
-    <br><br>Worked with methodology adaptable to similar motion-critical automation systems.
-  </p>
-</div>
+            <!-- Project 1 -->
+            <div class="project-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                <img src="wafer transfer arm.png" alt="Wafer Transfer Arm" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <div class="flex justify-between items-center mb-3">
+                        <h3 class="text-xl font-bold">Wafer Transfer Arm - Design & Analysis</h3>
+                        <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded">2025</span>
+                    </div>
 
-           
+                    <p class="text-gray-600 mb-4">Designed a precision wafer transfer mechanism using analytical calculations for semiconductor applications.</p>
 
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-gray-100 text-gray-800 text-xs px-3 py-1 rounded-full">Precision Engineering</span>
+                        <span class="bg-gray-100 text-gray-800 text-xs px-3 py-1 rounded-full">Engineering Mechanics</span>
+                        <span class="bg-gray-100 text-gray-800 text-xs px-3 py-1 rounded-full">System Design</span>
+                    </div>
+
+                    <button onclick="openProjectModal('Wafer Transfer Arm - Design & Analysis', document.getElementById('details-content-1').innerHTML)"
+                        class="text-blue-600 hover:text-blue-800 font-medium inline-flex items-center">
+                        View Details <i class="fas fa-chevron-right ml-2 text-sm"></i>
+                    </button>
+
+                    <div id="details-content-1" class="hidden">
+                        <p>
+                            Designed a semiconductor-grade wafer transfer arm using analytical calculations focused on high precision and repeatability.
+                            <br><br>
+                            Executed force, torque, and stress analysis to validate mechanical integrity under load conditions.
+                            <br><br>
+                            Focused on minimizing deformation and vibration for optimal performance.
+                            <br><br>
+                            Worked with methodology adaptable to similar motion-critical automation systems.
+                        </p>
                     </div>
                 </div>
-                
-                <!-- Project 2 -->
-                <div class="project-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
-                    <img src="walker aid.png" alt="Mobility Walker Aid" class="w-full h-48 object-cover">
-                    <div class="p-6">
-                        <div class="flex justify-between items-center mb-3">
-                            <h3 class="text-xl font-bold">Mobility Walker Aid</h3>
-                            <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded">2025</span>
-                        </div>
-                        <p class="text-gray-600 mb-4">Developed a 4-wheeled mobility assistive Aid model for elderly users focusing on stability, ergonomics and safety.</p>
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="bg-gray-100 text-gray-800 text-xs px-3 py-1 rounded-full">CAD</span>
-                            <span class="bg-gray-100 text-gray-800 text-xs px-3 py-1 rounded-full">FEA</span>
-                            <span class="bg-gray-100 text-gray-800 text-xs px-3 py-1 rounded-full">Product Design and Developement</span>
-                            <span class="bg-gray-100 text-gray-800 text-xs px-3 py-1 rounded-full">R & D</span>
-                        </div>
-                         <a href="javascript:void(0);" 
-   onclick="
-     const content = document.getElementById('details-content-2');
-     const text = document.getElementById('toggle-text-2');
-     content.classList.toggle('hidden');
-     text.textContent = content.classList.contains('hidden') ? 'View Details' : 'Hide Details';
-   "
-   class="text-blue-600 hover:text-blue-800 font-medium inline-flex items-center">
-  <span id="toggle-text-2">View Details</span>
-  <i class="fas fa-chevron-right ml-2 text-sm"></i>
-</a>
-<div id="details-content-2" class="mt-2 hidden max-h-40 overflow-y-auto">
-  <!-- Your long content here -->
-  <p class="text-gray-700">
-    Created a 3D CAD model of a four-wheeled walker tailored to accommodate elderly and disabled users with mobility limitations.
-    <br><br>Applied ergonomic design principles to optimize handle height, user posture, and ease of movement.
-    <br><br>Conducted Finite Element Analysis (FEA) to assess structural stability under various loading conditions.
-    <br><br>Iterated designs based on stress and deformation results to enhance reliability and comfort.
-    <br><br>Developed technical documentation and design reports for academic and review purposes.
-  </p>
-</div>
-   </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                <img src="walker aid.png" alt="Mobility Walker Aid" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <div class="flex justify-between items-center mb-3">
+                        <h3 class="text-xl font-bold">Mobility Walker Aid</h3>
+                        <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded">2025</span>
+                    </div>
+
+                    <p class="text-gray-600 mb-4">Developed a 4-wheeled mobility assistive Aid model for elderly users focusing on stability, ergonomics and safety.</p>
+
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-gray-100 text-gray-800 text-xs px-3 py-1 rounded-full">CAD</span>
+                        <span class="bg-gray-100 text-gray-800 text-xs px-3 py-1 rounded-full">FEA</span>
+                        <span class="bg-gray-100 text-gray-800 text-xs px-3 py-1 rounded-full">Product Design and Development</span>
+                        <span class="bg-gray-100 text-gray-800 text-xs px-3 py-1 rounded-full">R & D</span>
+                    </div>
+
+                    <button onclick="openProjectModal('Mobility Walker Aid', document.getElementById('details-content-2').innerHTML)"
+                        class="text-blue-600 hover:text-blue-800 font-medium inline-flex items-center">
+                        View Details <i class="fas fa-chevron-right ml-2 text-sm"></i>
+                    </button>
+
+                    <div id="details-content-2" class="hidden">
+                        <p>
+                            Created a 3D CAD model of a four-wheeled walker tailored to accommodate elderly and disabled users with mobility limitations.
+                            <br><br>
+                            Applied ergonomic design principles to optimize handle height, user posture, and ease of movement.
+                            <br><br>
+                            Conducted Finite Element Analysis (FEA) to assess structural stability under various loading conditions.
+                            <br><br>
+                            Iterated designs based on stress and deformation results to enhance reliability and comfort.
+                            <br><br>
+                            Developed technical documentation and design reports for academic and review purposes.
+                        </p>
+                    </div>
                 </div>
-                
-                <!-- Project 3 -->
-                <div class="project-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
-                    <img src="heat exchanger cfd simulation.jpg" alt="Industrial Robot" class="w-full h-48 object-cover">
-                    <div class="p-6">
-                        <div class="flex justify-between items-center mb-3">
-                            <h3 class="text-xl font-bold">Heat Exchanger-CFD simulation</h3>
-                            <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded">2024</span>
-                        </div>
-                        <p class="text-gray-600 mb-4"> Simulated thermal and fluid flow behavior in a shell-and-tube heat exchanger using ANSYS Fluent.</p>
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="bg-gray-100 text-gray-800 text-xs px-3 py-1 rounded-full">CFD</span>
-                            <span class="bg-gray-100 text-gray-800 text-xs px-3 py-1 rounded-full">ANSYS fluent</span>
-                            <span class="bg-gray-100 text-gray-800 text-xs px-3 py-1 rounded-full">Thermal Engineering</span>
-                        </div>
-                 <a href="javascript:void(0);" 
-   onclick="
-     const content = document.getElementById('details-content-3');
-     const text = document.getElementById('toggle-text-3');
-     content.classList.toggle('hidden');
-     text.textContent = content.classList.contains('hidden') ? 'View Details' : 'Hide Details';
-   "
-   class="text-blue-600 hover:text-blue-800 font-medium inline-flex items-center">
-  <span id="toggle-text-3">View Details</span>
-  <i class="fas fa-chevron-right ml-2 text-sm"></i>
-</a>
-<div id="details-content-3" class="mt-2 hidden max-h-40 overflow-y-auto">
-  <!-- Your long content here -->
-  <p class="text-gray-700">
-    Modeled fluid flow and heat transfer in a shell-and-tube heat exchanger to study thermal behavior.
-    <br><br>Used CFD simulations to analyze velocity profiles, temperature gradients, and pressure losses.
-    <br><br>Identified bottlenecks and optimized baffle configuration to improve heat transfer efficiency.
-    <br><br>Interpreted simulation data to recommend practical design improvements for industrial application.
-  </p>
-</div>
-   </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="project-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                <img src="heat exchanger cfd simulation.jpg" alt="Heat Exchanger CFD Simulation" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <div class="flex justify-between items-center mb-3">
+                        <h3 class="text-xl font-bold">Heat Exchanger-CFD Simulation</h3>
+                        <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded">2024</span>
+                    </div>
+
+                    <p class="text-gray-600 mb-4">Simulated thermal and fluid flow behavior in a shell-and-tube heat exchanger using ANSYS Fluent.</p>
+
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-gray-100 text-gray-800 text-xs px-3 py-1 rounded-full">CFD</span>
+                        <span class="bg-gray-100 text-gray-800 text-xs px-3 py-1 rounded-full">ANSYS Fluent</span>
+                        <span class="bg-gray-100 text-gray-800 text-xs px-3 py-1 rounded-full">Thermal Engineering</span>
+                    </div>
+
+                    <button onclick="openProjectModal('Heat Exchanger-CFD Simulation', document.getElementById('details-content-3').innerHTML)"
+                        class="text-blue-600 hover:text-blue-800 font-medium inline-flex items-center">
+                        View Details <i class="fas fa-chevron-right ml-2 text-sm"></i>
+                    </button>
+
+                    <div id="details-content-3" class="hidden">
+                        <p>
+                            Modeled fluid flow and heat transfer in a shell-and-tube heat exchanger to study thermal behavior.
+                            <br><br>
+                            Used CFD simulations to analyze velocity profiles, temperature gradients, and pressure losses.
+                            <br><br>
+                            Identified bottlenecks and optimized baffle configuration to improve heat transfer efficiency.
+                            <br><br>
+                            Interpreted simulation data to recommend practical design improvements for industrial application.
+                        </p>
+                    </div>
                 </div>
-                <!-- Project 4 -->
-                <div class="project-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
-                    <img src="doe spc.png" alt="DoE & SPC" class="w-full h-48 object-cover">
-                    <div class="p-6">
-                        <div class="flex justify-between items-center mb-3">
-                            <h3 class="text-xl font-bold">Design of Experiments & Statistical Process Control</h3>
-                            <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded">2024</span>
-                        </div>
-                        <p class="text-gray-600 mb-4">Simulated reflow soldering behavior using a low-cost model to study process variability and control strategies</p>
-                            <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="bg-gray-100 text-gray-800 text-xs px-3 py-1 rounded-full">MiniTab</span>
-                            <span class="bg-gray-100 text-gray-800 text-xs px-3 py-1 rounded-full">ANOVA</span>
-                            <span class="bg-gray-100 text-gray-800 text-xs px-3 py-1 rounded-full">DoE</span>
-                            <span class="bg-gray-100 text-gray-800 text-xs px-3 py-1 rounded-full">Regression modeling</span>
-                            <span class="bg-gray-100 text-gray-800 text-xs px-3 py-1 rounded-full">SPC charts</span>
+            </div>
 
-                        </div>
-                     <a href="javascript:void(0);" 
-   onclick="
-     const content = document.getElementById('details-content-4');
-     const text = document.getElementById('toggle-text-4');
-     content.classList.toggle('hidden');
-     text.textContent = content.classList.contains('hidden') ? 'View Details' : 'Hide Details';
-   "
-   class="text-blue-600 hover:text-blue-800 font-medium inline-flex items-center">
-  <span id="toggle-text-4">View Details</span>
-  <i class="fas fa-chevron-right ml-2 text-sm"></i>
-</a>
-<div id="details-content-4" class="mt-2 hidden max-h-40 overflow-y-auto">
-  <!-- Your long content here -->
-  <p class="text-gray-700">
-    Designed and conducted a full-factorial 2³ DOE experiment to analyze the effects of temperature, cocoa percentage, and pan thermal conductivity on melting behavior (analogous to solder reflow).
-    <br><br>Used chocolate chips as a cost-effective analog for solder, enabling simulation of reflow soldering in electronics manufacturing.
-    <br><br>Documented methodology and findings in a professional group presentation and technical report format.
-    <br><br>Built regression models to capture main effects and interactions between process variables, validating with residual plots and ANOVA
-    <br><br>Translated academic experiments into real-world analogs, highlighting relevance to quality control in electronics manufacturing.
-  </p>
-</div>
- </div> 
- </div>                         
-                
-                <!-- Project 5 -->
-                <div class="project-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
-                    <img src="DMA.png" alt="Composite analysis" class="w-full h-48 object-cover">
-                    <div class="p-6">
-                        <div class="flex justify-between items-center mb-3">
-                            <h3 class="text-xl font-bold">Dynamic Mechanical Analysis (DMA)-Composite Material Study
-                                
-                            </h3>
-                            <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded">2023</span>
-                        </div>
-                        <p class="text-gray-600 mb-4">Performed DMA testing on jute/pineapple fiber composites to assess viscoelastic performance.</p>
-                            <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="bg-gray-100 text-gray-800 text-xs px-3 py-1 rounded-full">DMA Tester</span>
-                            <span class="bg-gray-100 text-gray-800 text-xs px-3 py-1 rounded-full">Composites</span>
-                            <span class="bg-gray-100 text-gray-800 text-xs px-3 py-1 rounded-full">Material analysis</span>
-                        </div>
-                        <a href="javascript:void(0);" 
-   onclick="
-     const content = document.getElementById('details-content-5');
-     const text = document.getElementById('toggle-text-5');
-     content.classList.toggle('hidden');
-     text.textContent = content.classList.contains('hidden') ? 'View Details' : 'Hide Details';
-   "
-   class="text-blue-600 hover:text-blue-800 font-medium inline-flex items-center">
-  <span id="toggle-text-5">View Details</span>
-  <i class="fas fa-chevron-right ml-2 text-sm"></i>
-</a>
-<div id="details-content-5" class="mt-2 hidden max-h-40 overflow-y-auto">
-  <!-- Your long content here -->
-  <p class="text-gray-700">
-    Investigated the mechanical behavior of jute and pineapple fiber polymer composites under dynamic loads.
-    <br><br>Measured storage and loss modulus to understand stiffness and damping characteristics.
-    <br><br>Evaluated performance for automotive/structural applications using DMA data curves.
-  </p>
-</div>
- </div>
- </div>
-                
-                <!-- Project 6 -->
-                <div class="project-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
-                    <img src="fire sup.png" alt="Fire suppressor" class="w-full h-48 object-cover">
-                    <div class="p-6">
-                        <div class="flex justify-between items-center mb-3">
-                            <h3 class="text-xl font-bold">In-Built Car Fire Suppressor-Conceptual Design</h3>
-                            <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded">National Level Symposium - Runner up - 2022</span>
-                            
-                        </div>
-                        <p class="text-gray-600 mb-4">Designed an integrated fire suppression system suitable for automotive applications</p>
-                            <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="bg-gray-100 text-gray-800 text-xs px-3 py-1 rounded-full">CAD schematics</span>
-                            <span class="bg-gray-100 text-gray-800 text-xs px-3 py-1 rounded-full">Embedded Electronics Concept</span>
-                            <span class="bg-gray-100 text-gray-800 text-xs px-3 py-1 rounded-full">System Flow and safety compliance</span>
-                        </div>
-                         <a href="javascript:void(0);" 
-   onclick="
-     const content = document.getElementById('details-content-6');
-     const text = document.getElementById('toggle-text-6');
-     content.classList.toggle('hidden');
-     text.textContent = content.classList.contains('hidden') ? 'View Details' : 'Hide Details';
-   "
-   class="text-blue-600 hover:text-blue-800 font-medium inline-flex items-center">
-  <span id="toggle-text-6">View Details</span>
-  <i class="fas fa-chevron-right ml-2 text-sm"></i>
-</a>
-<div id="details-content-6" class="mt-2 hidden max-h-40 overflow-y-auto">
-  <!-- Your long content here -->
-  <p class="text-gray-700">
-    Engineered a compact fire suppression unit designed for installation within vehicle chassis, integrating seamlessly with existing car architecture
-    <br><br>Defined sensor integration logic using dual heat and smoke detection to trigger deployable suppressants within seconds of a fire event.
-    <br><br>Designed CAD schematics for extinguisher housing, nozzle placements, and sensor modules tailored to typical engine bay dimensions.
-    <br><br>Demonstrated potential for commercial adaptation and retrofit in passenger and specialty vehicles.
-  </p>
-</div>
-</div>
-</div>
+            <!-- Project 4 -->
+            <div class="project-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                <img src="doe spc.png" alt="DoE and SPC" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <div class="flex justify-between items-center mb-3">
+                        <h3 class="text-xl font-bold">Design of Experiments & Statistical Process Control</h3>
+                        <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded">2024</span>
+                    </div>
 
+                    <p class="text-gray-600 mb-4">Simulated reflow soldering behavior using a low-cost model to study process variability and control strategies.</p>
 
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-gray-100 text-gray-800 text-xs px-3 py-1 rounded-full">MiniTab</span>
+                        <span class="bg-gray-100 text-gray-800 text-xs px-3 py-1 rounded-full">ANOVA</span>
+                        <span class="bg-gray-100 text-gray-800 text-xs px-3 py-1 rounded-full">DoE</span>
+                        <span class="bg-gray-100 text-gray-800 text-xs px-3 py-1 rounded-full">Regression Modeling</span>
+                        <span class="bg-gray-100 text-gray-800 text-xs px-3 py-1 rounded-full">SPC Charts</span>
+                    </div>
+
+                    <button onclick="openProjectModal('Design of Experiments & Statistical Process Control', document.getElementById('details-content-4').innerHTML)"
+                        class="text-blue-600 hover:text-blue-800 font-medium inline-flex items-center">
+                        View Details <i class="fas fa-chevron-right ml-2 text-sm"></i>
+                    </button>
+
+                    <div id="details-content-4" class="hidden">
+                        <p>
+                            Designed and conducted a full-factorial 2³ DOE experiment to analyze the effects of temperature, cocoa percentage, and pan thermal conductivity on melting behavior.
+                            <br><br>
+                            Used chocolate chips as a cost-effective analog for solder, enabling simulation of reflow soldering in electronics manufacturing.
+                            <br><br>
+                            Documented methodology and findings in a professional group presentation and technical report format.
+                            <br><br>
+                            Built regression models to capture main effects and interactions between process variables, validating with residual plots and ANOVA.
+                            <br><br>
+                            Translated academic experiments into real-world analogs, highlighting relevance to quality control in electronics manufacturing.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 5 -->
+            <div class="project-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                <img src="DMA.png" alt="Composite Material Study" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <div class="flex justify-between items-center mb-3">
+                        <h3 class="text-xl font-bold">Dynamic Mechanical Analysis (DMA)-Composite Material Study</h3>
+                        <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded">2023</span>
+                    </div>
+
+                    <p class="text-gray-600 mb-4">Performed DMA testing on jute/pineapple fiber composites to assess viscoelastic performance.</p>
+
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-gray-100 text-gray-800 text-xs px-3 py-1 rounded-full">DMA Tester</span>
+                        <span class="bg-gray-100 text-gray-800 text-xs px-3 py-1 rounded-full">Composites</span>
+                        <span class="bg-gray-100 text-gray-800 text-xs px-3 py-1 rounded-full">Material Analysis</span>
+                    </div>
+
+                    <button onclick="openProjectModal('Dynamic Mechanical Analysis (DMA)-Composite Material Study', document.getElementById('details-content-5').innerHTML)"
+                        class="text-blue-600 hover:text-blue-800 font-medium inline-flex items-center">
+                        View Details <i class="fas fa-chevron-right ml-2 text-sm"></i>
+                    </button>
+
+                    <div id="details-content-5" class="hidden">
+                        <p>
+                            Investigated the mechanical behavior of jute and pineapple fiber polymer composites under dynamic loads.
+                            <br><br>
+                            Measured storage and loss modulus to understand stiffness and damping characteristics.
+                            <br><br>
+                            Evaluated performance for automotive/structural applications using DMA data curves.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 6 -->
+            <div class="project-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                <img src="fire sup.png" alt="Fire Suppressor" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <div class="flex justify-between items-center mb-3">
+                        <h3 class="text-xl font-bold">In-Built Car Fire Suppressor-Conceptual Design</h3>
+                        <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded">Runner up - 2022</span>
+                    </div>
+
+                    <p class="text-gray-600 mb-4">Designed an integrated fire suppression system suitable for automotive applications.</p>
+
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-gray-100 text-gray-800 text-xs px-3 py-1 rounded-full">CAD Schematics</span>
+                        <span class="bg-gray-100 text-gray-800 text-xs px-3 py-1 rounded-full">Embedded Electronics Concept</span>
+                        <span class="bg-gray-100 text-gray-800 text-xs px-3 py-1 rounded-full">Safety Compliance</span>
+                    </div>
+
+                    <button onclick="openProjectModal('In-Built Car Fire Suppressor-Conceptual Design', document.getElementById('details-content-6').innerHTML)"
+                        class="text-blue-600 hover:text-blue-800 font-medium inline-flex items-center">
+                        View Details <i class="fas fa-chevron-right ml-2 text-sm"></i>
+                    </button>
+
+                    <div id="details-content-6" class="hidden">
+                        <p>
+                            Engineered a compact fire suppression unit designed for installation within vehicle chassis, integrating seamlessly with existing car architecture.
+                            <br><br>
+                            Defined sensor integration logic using dual heat and smoke detection to trigger deployable suppressants within seconds of a fire event.
+                            <br><br>
+                            Designed CAD schematics for extinguisher housing, nozzle placements, and sensor modules tailored to typical engine bay dimensions.
+                            <br><br>
+                            Demonstrated potential for commercial adaptation and retrofit in passenger and specialty vehicles.
+                        </p>
+                    </div>
+                </div>
+            </div>
 
         </div>
-    </section>
+    </div>
+</section>
+
+<!-- Project Modal -->
+<div id="project-modal"
+    class="hidden fixed inset-0 bg-black bg-opacity-0 z-[100] flex items-center justify-center px-4 transition-all duration-300 ease-out">
+
+    <div id="project-modal-box"
+        class="bg-white rounded-lg shadow-2xl max-w-2xl w-full max-h-[80vh] overflow-y-auto relative p-6 transform scale-95 opacity-0 transition-all duration-300 ease-out">
+
+        <button onclick="closeProjectModal()"
+            class="absolute top-4 right-4 text-gray-500 hover:text-red-600 text-2xl font-bold">
+            &times;
+        </button>
+
+        <h3 id="modal-title" class="text-2xl font-bold mb-4 text-gray-800 pr-8"></h3>
+        <div id="modal-content" class="text-gray-700 leading-relaxed"></div>
+    </div>
+</div>
 
     <!-- Skills Section -->
     <section id="skills" class="py-20 px-4 sm:px-6 lg:px-8 bg-white">
@@ -833,8 +837,42 @@ Beyond technical work, I value collaboration, continuous learning, and deliverin
                 }
             });
         });
+
+        function openProjectModal(title, content) {
+    const modal = document.getElementById('project-modal');
+    const modalBox = document.getElementById('project-modal-box');
+
+    document.getElementById('modal-title').textContent = title;
+    document.getElementById('modal-content').innerHTML = content;
+
+    modal.classList.remove('hidden');
+
+    setTimeout(() => {
+        modal.classList.remove('bg-opacity-0');
+        modal.classList.add('bg-opacity-50');
+
+        modalBox.classList.remove('scale-95', 'opacity-0');
+        modalBox.classList.add('scale-100', 'opacity-100');
+    }, 10);
+}
+
+function closeProjectModal() {
+    const modal = document.getElementById('project-modal');
+    const modalBox = document.getElementById('project-modal-box');
+
+    modal.classList.remove('bg-opacity-50');
+    modal.classList.add('bg-opacity-0');
+
+    modalBox.classList.remove('scale-100', 'opacity-100');
+    modalBox.classList.add('scale-95', 'opacity-0');
+
+    setTimeout(() => {
+        modal.classList.add('hidden');
+    }, 300);
+}
+
     </script>
-    
+
 </body>
 </html>
 
